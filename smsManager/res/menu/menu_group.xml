@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_create_single_group"
+        android:icon="@drawable/tab_group"
+        android:title="新建群组"/>
+    <item
+        android:id="@+id/menu_delete_all_group"
+        android:icon="@drawable/tab_conversation"
+        android:title="删除所有群组"/>
+
+</menu>
