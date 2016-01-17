@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 问候 -->
+    <string-array name="hello">
+        <item>你好，%1$s！</item>
+        <item>%1$s我是你的助手，有什么想问我的吗？</item>
+        <item>很高兴为您服务，%1$s！</item>
+        <item>%1$s，我想死你了！</item>
+    </string-array>
+    <string-array name="hello2">
+        <item>%1$s！你好，多谢关心！</item>
+        <item>你好，%1$s，我是你的助手，有什么想问我的吗？</item>
+        <item>我很好，你呢，%1$s！</item>
+        <item>%1$s，我很好啊！</item>
+    </string-array>
+    <!-- 笑话类 -->
+    <string-array name="joke">
+        <item>家住十楼，这两天电梯坏了维修中。周末懒得下楼，就叫肯德基外卖。结果连续两天来的是同一个大哥。第二天他气喘吁吁地说：“哥，明天别点肯德基了，麦当劳出新品了，你不试试？”</item>
+        <item>领导开会，开了很长时间，众人疲惫不堪，突然听到领导说了一句，下面我讲最后一点，众人都精神起来。然后，领导又说了一句，"这一点我分三小点来讲。"众人......晕倒。 </item>
+        <item>今儿我请客！大家一定要赏光啊，咱们吃：自来水泡馍，馍自带。</item>
+        <item>睡觉前，我给儿子讲故事说：“有只小鸟很孝敬老人，它妈妈老了后，它就捉小虫子给妈妈吃。要是我老了，你怎么做呢？”儿子认真地说：“我捉大虫子给妈妈吃！”</item>
+        <item>考完试以后，我突然对人生失去了信心。第二天去医院看病，医生说：“对不起，你这个病，当初考试划重点时老师说不是重点，我看不了。”</item>
+        <item>妈妈：“今天在学校里学了不少东西吧！”儿子：“不多，明天还得去。”</item>
+        <item>晚上，妈妈在屋里对在客厅的儿子喊道：“儿子，你去厨房看下，看灯关上了没有。”儿子去看了看，回来说：“妈妈，厨房里黑咕隆咚的，什么也看不到。”</item>
+        <item>爸爸：“我要寄两封信，你去帮我买两个信封、两张邮票。”儿子拿了钱就去了，过会儿回来后，却只拿了一个信封、一张邮票。爸爸问：“你怎么都买了一个呢。”儿子：“你把那两封信都装到一个信封里，只用贴一张邮票，多省钱啊！”</item>
+    </string-array>
+    <string-array name="tang_poetry">
+        <item>            故人西辞黄鹤楼，\n烟花三月下扬州。\n孤帆远影碧空尽，\n惟见长江天际流。</item>
+        <item>			床前明月光，\n疑是地上霜，\n举头望明月，\n低头思故乡。</item>
+        <item>		    朝辞白帝彩云间，\n千里江陵一日还。\n两岸猿声啼不住，\n轻舟已过万重山。</item>
+        <item>		    白日依山尽，\n黄河入海流。\n欲穷千里目，\n更上一层楼。</item>
+        <item>		    黄河远上白云间，\n一片孤城万仞山。\n羌笛何须怨杨柳，\n春风不度玉门关。</item>
+    </string-array>
+    <string-array name="mm_path">
+
+        <!-- 以下图片地址都是假的 -->
+        <item>            http://image.baidu.com/1231231.jpg//图片地址假</item>
+        <item>			http://image.baidu.com/1231231.jpg</item>
+        <item>		    http://image.baidu.com/1231231.jpg</item>
+        <item>		    http://image.baidu.com/1231231.jpg</item>
+        <item>		    http://image.baidu.com/1231231.jpg</item>
+    </string-array>
+    <string-array name="mm">
+        <item>看这张如何？</item>
+        <item>好吧，你看这张怎么样 . . .</item>
+        <item>怎么都爱让我找美女？</item>
+        <item>行，给你看</item>
+        <item>这个怎么样，正不正？</item>
+        <item>我觉得这个最好看了</item>
+    </string-array>
+    <string-array name="unknow">
+        <item>干嘛问人家这么难的问题？不会啊！</item>
+        <item>这个问题太难了，我不知道该怎么回答!</item>
+        <item>你是在考我的智商吗？问这么难的问题。</item>
+        <item>不会，不要欺负人。</item>
+        <item>哎呀，这个问题好难啊！</item>
+        <item>真的好难啊，你真坏。</item>
+    </string-array>
+    <!--
+    <string-array name="server_error">
+        <item>出错了，服务器故障！</item>
+        <item>亲，服务器不给力，什么答案也没告诉我。</item>
+        <item>服务器拒绝连接</item>
+        <item>服务器出异常了，不过10000知道不会挂掉，再试一次。</item>
+    </string-array>
+    -->
+    <string-array name="net_error">
+        <item>出错了，%1$s，网络异常！</item>
+        <item>连接超时，%1$s，检查下网络吧，我已经很努力了</item>
+        <item>您网络不给力啊，%1$s。</item>
+        <item>网络出错了，不过10000知道不会挂掉，再试一次。</item>
+    </string-array>
+    <string-array name="json_error">
+        <item>%1$s，数据异常。</item>
+        <item>对不起，%1$s，数据解析异常。</item>
+        <item>数据出错了，不过10000知道不会挂掉，再试一次。</item>
+    </string-array>
+    <string-array name="voice_host">
+        <item>青年女声   中英文（普通话）</item>
+        <item>青年男声 中英文（普通话）</item>
+        <item>青年女声 中英文（粤语）</item>
+        <item>青年女声 汉语（四川话）</item>
+        <item>青年男声 汉语（湖南话）</item>
+        <item>童年男声 汉语（普通话）</item>
+        <item>童年女声 汉语（普通话）</item>
+    </string-array>
+    
+    <string-array name="voice_host_value">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixm</item>
+        <item>vixr</item>
+        <item>vixqa</item>
+        <item>vixx</item>
+        <item>vinn</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/warning_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/yellow_warning"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/warning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/yellow_warning"
+            android:text="@string/net_unavailable"
+            android:textColor="@color/yellow_font_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scolllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warning_layout"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <!--
+            	当想让一个scrollview的子控件全屏也就是fillparent的时候，
+            	设置android:layout_height="fill_parent"不起作用，
+            	需要加上fillviewport属性，但是当子控件的高度等于scrollview的高度时，
+            	这个标签就没有任何意义了
+        -->
+
+        <LinearLayout
+            android:id="@+id/base_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="visible" >
+        </LinearLayout>
+    </ScrollView>
+    
+    <include 
+        layout="@layout/bottom_layout_new"
+        />
+</RelativeLayout>
