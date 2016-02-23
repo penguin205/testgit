@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_item_incoming_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        android:text="2016-02-02 15:40:44"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="5dip"
+        android:paddingTop="3dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:src="@drawable/xiaomu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="小慕"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_portrait"
+            android:background="@drawable/chatfrom_bg_normal"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_item_incoming_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你好，小慕为你服务"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_item_incoming_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:text="深圳下雪了…………"
+                android:autoLink="web|email|phone"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_item_incoming_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dip"
+                android:src="@drawable/mm9" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

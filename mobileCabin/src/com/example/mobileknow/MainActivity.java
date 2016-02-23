@@ -1,6 +1,10 @@
 package com.example.mobileknow;
 
 
+import java.util.Date;
+
+import com.example.mobileknow.entity.ChatMessage;
+import com.example.mobileknow.entity.ChatMessage.Type;
 import com.example.mobileknow.recognizer.VoiceRecognizer;
 import com.example.mobileknow.server.IAskAsyncTask;
 import com.example.mobileknow.speech.VoicePlayer;
@@ -59,6 +63,11 @@ public class MainActivity extends Activity implements OnClickListener {
 	private void initClass() {
 		player = new VoicePlayerImpl(this);
 		updateView = new UpdateView(this, scrollView, player);
+		ChatMessage chatMessage = new ChatMessage();
+		chatMessage.setDate(new Date());
+		chatMessage.setContent("你好，京妮为您服务");
+		chatMessage.setType(Type.INCOMING);
+		updateView.upateSheView(chatMessage);
 		iaskAsyncTask = new IAskAsyncTask(this, updateView);
 		recognizer = new VoiceRecognizer(this);
 	}
