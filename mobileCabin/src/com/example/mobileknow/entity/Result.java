@@ -1,5 +1,8 @@
 package com.example.mobileknow.entity;
 
+  /**
+   * bean 类
+  */
 public class Result {
 	
 	public int code;
