@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- space -->
+    <dimen name="blank_space">8dp</dimen>
+    <dimen name="blank_space_one">1dp</dimen>
+    <dimen name="blank_space_o_point_five">0.5dp</dimen>
+
+    <!-- text -->
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+
+    <!-- Rhythm -->
+    <dimen name="rhythm">48dp</dimen>
+    <dimen name="rhythm_24">24dp</dimen>
+    <dimen name="rhythm_12">12dp</dimen>
+
+    <!-- ... -->
+    <dimen name="rdo1">0dp</dimen>
+    <dimen name="rdo2">64dp</dimen>
+
+</resources>

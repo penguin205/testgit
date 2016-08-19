@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, VideoPlayActivity!</string>
+    <string name="app_name">视频</string>
+    <string name="txt_1">fileName</string>
+    <string name="txt_2">filePath</string>
+    <string name="seekbar_time_show">00:00:00</string>
+    <string name="prompt_no_video_file">无视频文件！</string>
+    <string name="volume">音量</string>
+</resources>
