@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="100dip" >
+
+        <TextView
+            android:id="@+id/tv_remains_this_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="55sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_remains_this_month"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/tv_remains_this_month"
+            android:paddingBottom="10dip"
+            android:text="@string/MB"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_remains_this_month"
+            android:layout_centerHorizontal="true"
+            android:text="@string/month_flow_remain"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="50dip"
+        android:paddingLeft="60dip"
+        android:paddingRight="60dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_consumes_this_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_consumes_this_month"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/tv_consumes_this_month"
+                    android:text="@string/MB"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_consumes_this_month"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/month_flow_consume"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_consumes_this_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_consumes_this_day"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/tv_consumes_this_day"
+                    android:text="@string/MB"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_consumes_this_day"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/day_flow_consume"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_totals_this_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_totals_this_month"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/tv_totals_this_month"
+                    android:text="@string/MB"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_totals_this_month"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/month_flow_limit"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

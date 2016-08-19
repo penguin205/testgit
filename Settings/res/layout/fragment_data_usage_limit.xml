@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tv_month_limit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="@string/month_flow_limit"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_month_limit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_month_limit_title"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@id/tv_month_limit_title"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="500"
+            android:background="@android:color/transparent"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_month_limit_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/et_month_limit_num"
+            android:text="@string/MB"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/tv_month_limit_title"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tv_month_consume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="@string/month_flow_consumed"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_month_consume_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@id/tv_month_consume_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_month_consume_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_month_consume_num"
+            android:text="@string/MB"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/tv_month_consume_title"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tv_day_remain_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="@string/day_flow_available"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_day_remain_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@id/tv_day_remain_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_day_remain_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_day_remain_num"
+            android:text="@string/MB"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/tv_day_remain_title"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

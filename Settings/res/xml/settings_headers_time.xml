@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 24hour -->
+    <header
+        android:id="@+id/day24_hour"
+        android:title="@string/date_time_24hour"
+        />
+    <header
+        android:id="@+id/date_time_auto"
+        android:title="@string/date_time_auto" />
+    <header
+        android:id="@+id/timezone_pick"
+        android:fragment="com.android.settings.ZonePicker"
+        android:title="@string/date_time_set_timezone" />
+    <header
+        android:id="@+id/date_and_time"
+        android:dependency="date_time_auto"
+        android:title="@string/date_and_time_settings_title" />
+    <!-- android:dependency="date_time_auto" -->
+    <!-- Accessibility feedback -->
+    <!--
+         header
+        android:id="@+id/accessibility_settings"
+        android:fragment="com.android.settings.AccessibilitySettings"
+        android:icon="@drawable/ic_settings_accessibility"
+        android:title="@string/accessibility_settings" /
+    -->
+
+
+    <!-- Development -->
+    <!-- <header -->
+    <!-- android:id="@+id/development_settings" -->
+    <!-- android:fragment="com.android.settings.DevelopmentSettings" -->
+    <!-- android:icon="@drawable/ic_settings_development" -->
+    <!-- android:title="@string/development_settings_title" /> -->
+
+
+    <!-- About Device -->
+    <!-- <header -->
+    <!-- android:id="@+id/about_settings" -->
+    <!-- android:fragment="com.android.settings.DeviceInfoSettings" -->
+    <!-- android:icon="@drawable/ic_settings_about" -->
+    <!-- android:title="@string/about_settings" /> -->
+
+</preference-headers>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_wallpaper"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="450dp"
+        android:background="@drawable/options_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            
+            <LinearLayout
+                android:id="@+id/general_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_general" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tab_indicator_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/net_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_network" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tab_indicator_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/system_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_system" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/system_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tab_indicator_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            
+            <LinearLayout
+                android:id="@+id/sound_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_sound" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sound_quality_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tab_indicator_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/time_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tab_indicator_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+                        
+            <LinearLayout
+                android:id="@+id/restore_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_restore" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/restore_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tab_indicator_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dip"
+    android:paddingTop="20dip"
+    android:background="@drawable/default_wallpaper">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dip"
+        >
+        
+        <TextView
+            android:id="@+id/timepikcer_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="30dp"
+            android:text="@string/confirm"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/timepikcer_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="30dp"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.android.settings.widget.time.WheelView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.settings.widget.time.WheelView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.settings.widget.time.WheelView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.settings.widget.time.WheelView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.settings.widget.time.WheelView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

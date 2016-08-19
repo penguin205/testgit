@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/view1_tv_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/view1_et_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_input_password"
+                android:singleLine="true"
+            	android:password="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingBottom="5dip" />
+            
+            <CheckBox
+                android:id="@+id/view1_cb_show_password"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/wifi_show_password" />
+            
+			<TextView 
+			    android:id="@+id/view1_tv_security_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/security_way_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone"/>
+		</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_buttons1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+           
+            <Button
+                android:id="@+id/view1_btn_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_positive"
+                android:gravity="center"
+                android:text="@string/wifi_setup_connect"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+               />
+            
+             <Button
+                android:id="@+id/view1_btn_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_negative"
+                android:gravity="center"
+                android:text="@string/wifi_setup_cancel"
+                android:layout_marginLeft="20.0dip"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+                          
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/group_buttons2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+             <Button
+                android:id="@+id/view1_btn2_negative"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wifi_setup_cancel"
+                android:background="@drawable/btn_bg_negative"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+             
+             <Button
+                android:id="@+id/view1_btn2_netural"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:gravity="center"
+                android:text="@string/wifi_setup_forget"
+                android:background="@drawable/btn_bg_positive"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+                          
+            <Button
+                android:id="@+id/view1_btn2_positive"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wifi_setup_connect"
+                android:background="@drawable/btn_bg_positive"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="20.0dip"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+         <TextView android:id="@+id/view2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_connect_wifi_ongoing" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+         
+         <Button
+             android:id="@+id/view2_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="30dip"
+             android:background="@drawable/btn_bg_negative"
+             android:gravity="center"
+             android:text="@string/cancel"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+     <LinearLayout android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+         <TextView android:id="@+id/view3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_connect_wifi_success" 
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+         
+         <Button
+             android:id="@+id/view3_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="30dip"
+             android:background="@drawable/btn_bg_positive"
+             android:gravity="center"
+             android:text="@string/confirm"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+</FrameLayout>

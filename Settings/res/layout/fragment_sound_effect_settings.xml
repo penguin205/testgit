@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/page_effect_setting"
+        android:layout_width="match_parent"
+        android:layout_height="448dip"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingLeft="100dip"
+        android:paddingRight="100dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_31_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_31Hz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_62_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_62Hz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_125_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_125Hz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_250_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_250Hz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_500_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_500Hz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_1k_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_1KHz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="55dip"
+                android:layout_height="300dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scale_seekbar_bg" />
+
+                <com.android.settings.VerticalSeekBar
+                    android:id="@+id/seekBar_2k_hz"
+                    android:layout_width="25dip"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:max="24"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/thumb_bar_sound_effect" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="@string/_2KHz"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/first_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_system_version_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text="@string/system_version_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_system_version_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/tv_system_version_title"
+                android:text="@string/test_version"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/tv_system_version_title"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_hardware_version_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text="@string/hardware_version_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_hardware_version_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/tv_hardware_version_title"
+                android:text="@string/test_version"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/tv_hardware_version_title"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_kernel_version_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text="@string/kernel_version_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_kernel_version_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/tv_kernel_version_title"
+                android:text="@string/test_version"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/tv_kernel_version_title"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_update_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_positive"
+                android:gravity="center"
+                android:text="@string/online_update"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btn_update_offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0dip"
+                android:background="@drawable/btn_bg_positive"
+                android:gravity="center"
+                android:text="@string/offline_update"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/update_file_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@drawable/line_bg"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

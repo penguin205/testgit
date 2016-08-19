@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/restore_rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_restore_1st"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_restore_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prompt_confirm_restore_primary_factory"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_restore_subTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingBottom="15.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:paddingTop="15.0dip"
+            android:text="@string/prompt_confirm_all_apps_and_copys"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/btn_restore_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_positive"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <Button
+                android:id="@+id/btn_restore_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0dip"
+                android:background="@drawable/btn_bg_negative"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_restore_2nd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_restore_ongoing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prompt_ongoing_restore_primay_factory"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_restore_3rd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_restore_finished"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prompt_finish_restore_primay_factory"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorSecondary" />
+        
+        <Button
+            android:id="@+id/btn_restore_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg_positive"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </LinearLayout>
+
+</FrameLayout>

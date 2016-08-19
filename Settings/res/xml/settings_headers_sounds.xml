@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- effect -->
+    <header
+        android:id="@+id/sound_effect_settings"
+        android:fragment="com.android.settings.SoundEffectFragment"
+        android:icon="@drawable/ic_settings_sound_effect"
+        android:title="@string/head_page_sound_effect" />
+
+    <!-- speakers -->
+    <header
+        android:id="@+id/speakers_settings"
+        android:fragment="com.android.settings.SoundSpeakerFragment"
+        android:icon="@drawable/ic_settings_speakers"
+        android:title="@string/head_page_sound_speakers" />
+
+    <!-- navigation 
+    <header
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_navigation"
+        android:title="@string/head_page_sound_navigation" />
+ -->
+</preference-headers>

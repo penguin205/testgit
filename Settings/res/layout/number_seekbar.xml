@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/item_iv_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_display_sub"
+            android:focusable="false" />
+        
+		<RelativeLayout android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="30dp"
+		    android:layout_marginRight="30dp">
+		    
+		    <SeekBar
+	            android:id="@+id/item_seekbar"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:maxHeight="10dp"
+	           	android:layout_centerInParent="true"
+	            android:layout_marginTop="30dp"
+	            android:progressDrawable="@drawable/process_bar_bg"
+	            android:thumb="@drawable/thumb_process_bar"
+	            android:thumbOffset="2dp"
+	            android:focusable="false" 
+	            android:paddingBottom="12dip" />
+		            
+		     <TextView
+	            android:id="@+id/item_tv_subtitle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@android:color/white"
+	            android:layout_alignLeft="@id/item_seekbar"
+         		android:layout_below="@id/item_seekbar"/>
+		</RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/item_iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_display_add" 
+            android:focusable="false"/>
+        
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<!--     first part -->
+    <LinearLayout
+        android:id="@+id/first_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo_zhidou" />
+
+        <TextView
+            android:id="@+id/tv_system_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_time"
+                android:textSize="15sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="1dip"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/file_size"
+                android:textSize="15sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="1dip"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" 
+            >
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarView"
+                >
+
+               <TextView
+                    android:id="@+id/textView_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/prompt_is_downloading"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+               
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="600dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_tip"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="20dip"
+                    android:paddingBottom="20dip"
+                    android:progressDrawable="@drawable/download_bar" />
+
+                <TextView
+                    android:id="@+id/textView_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/progressBar1"
+                    android:layout_below="@id/progressBar1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <TextView
+                    android:id="@+id/textView_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/progressBar1" 
+                    android:layout_below="@id/progressBar1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_start_install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_positive"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:text="@string/start_install"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+    
+    <!-- Second part -->
+
+    <LinearLayout
+        android:id="@+id/second_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prompt_restart_to_update"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_install_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_positive"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/confirm" />
+
+            <Button
+                android:id="@+id/btn_install_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0dip"
+                android:background="@drawable/btn_bg_negative"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/cancel"  />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

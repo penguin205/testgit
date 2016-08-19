@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="600dip"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/car_bg" />
+
+        <FrameLayout
+            android:layout_width="600dip"
+            android:layout_height="500dip"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ajdust_coordinate" />
+
+            <ImageView
+                android:layout_width="550dip"
+                android:layout_height="450dip"
+                android:layout_gravity="center"
+                android:src="@drawable/adjust_cross" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_fron"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/direction_bg"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:text="@string/front"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/direction_bg"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:text="@string/back"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-5dip"
+            android:background="@drawable/direction_bg"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:text="@string/left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-5dip"
+            android:background="@drawable/direction_bg"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:text="@string/right"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btn_s_onoff" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="820dp" -->
+        <!-- android:layout_marginTop="460dp" -->
+        <!-- android:background="@drawable/btnx_on_off" -->
+        <!-- android:focusable="true" -->
+        <!-- android:scaleType="fitXY" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="735dp" -->
+        <!-- android:layout_marginTop="485dp" -->
+        <!-- android:text="@string/sset_dengxiang" -->
+        <!-- android:textColor="#ffeeeeee" -->
+        <!-- android:textSize="24dp" /> -->
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btn_s_reset" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_marginLeft="50dp" -->
+        <!-- android:background="@drawable/btnx_reset" -->
+        <!-- android:focusable="true" -->
+        <!-- android:scaleType="fitXY" /> -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_phase_icon"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginLeft="322dp"
+        android:layout_marginTop="74dp" >
+    </RelativeLayout>
+
+</RelativeLayout>
